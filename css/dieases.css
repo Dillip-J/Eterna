@@ -102,7 +102,7 @@ body a {
 /* ---------- Categories ---------- */
 .categories {
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
   gap: 25px;
   padding: 50px 10%;
   background-color: #ffffff;
