@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reviews & Complaints | V (Admin)</title>
+  <link rel="stylesheet" href="../css/com.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <div class="sidebar-header">V (Admin)</div>
+      <nav class="sidebar-nav">
+        <a href="#">Dashboard</a>
+        <a href="#">Provider Management</a>
+        <a href="#">User Management</a>
+        <a href="#">Bookings</a>
+        <a href="#" class="active">Reviews & Complaints</a>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="#">Settings</a>
+        <a href="#">Log Out</a>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="main-header">
+        <h1>Reviews & Complaints</h1>
+        <div class="user-profile">
+          Logged in as: [Admin Name]
+        </div>
+      </header>
+
+      <section class="data-table-container">
+        <h2>Active Complaints</h2>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Booking ID</th>
+              <th>Patient</th>
+              <th>Provider</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#B00781</td>
+              <td>Michael Lee</td>
+              <td>Dr. Emily White</td>
+              <td><span class="status-tag status-open">Open</span></td>
+              <td><button class="btn">View Details</button></td>
+            </tr>
+            <tr>
+              <td>#B00772</td>
+              <td>Sarah Chen</td>
+              <td>CareHome Nursing</td>
+              <td><span class="status-tag status-under-review">Under Review</span></td>
+              <td><button class="btn">View Details</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="data-table-container" style="margin-top: 30px;">
+        <h2>Latest Reviews</h2>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Booking ID</th>
+              <th>Patient</th>
+              <th>Provider</th>
+              <th>Rating</th>
+              <th>Comment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#B00780</td>
+              <td>John Doe</td>
+              <td>Dr. David Kim</td>
+              <td class="rating-stars">★★★★★</td>
+              <td>"Great service, very professional."</td>
+            </tr>
+            <tr>
+              <td>#B00779</td>
+              <td>Jane Smith</td>
+              <td>Dr. Emily White</td>
+              <td class="rating-stars">★★★★☆</td>
+              <td>"Was helpful, but arrived a bit late."</td>
+            </tr>
+            <tr>
+              <td>#B00777</td>
+              <td>Robert Brown</td>
+              <td>CareHome Nursing</td>
+              <td class="rating-stars">★★★★★</td>
+              <td>"Very compassionate and skilled."</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal-overlay" style="display: none;"> <div class="modal-content">
+      <div class="modal-header">
+        <h2>Complaint Details (ID: #B00781)</h2>
+        <button class="modal-close">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="detail-group">
+          <label>Patient</label>
+          <p>Michael Lee (user_id: 12)</p>
+        </div>
+        <div class="detail-group">
+          <label>Provider</label>
+          <p>Dr. Emily White (provider_id: 4)</p>
+        </div>
+        <div class="detail-group">
+          <label>Complaint Text</label>
+          <p>"The doctor never arrived for the scheduled 2:00 PM appointment. I received no call or message. This is unacceptable."</p>
+        </div>
+        
+        <div class="detail-group">
+          <label>Admin Action</label>
+          <textarea rows="3" placeholder="Add internal notes... e.g., 'Contacted provider for explanation.'"></textarea>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn-secondary">Contact Patient</button>
+        <button class="btn-primary">Mark as Resolved</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

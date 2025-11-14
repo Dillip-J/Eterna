@@ -1,0 +1,62 @@
+* {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #333, #091f2c);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 350px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+
+    input[type="text"], input[type="password"], input[type="e-mail"] {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    /*4CAF50*/
+    .btn-login {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: #091f2c;
+      color: white;
+      border: none;
+      margin-top: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .btn-login:hover {
+      background-color: #fff;
+      color: #091f2c;
+      transition: 0.15s;
+    }
+
+    .note {
+      font-size: 0.85em;
+      text-align: center;
+      color: gray;
+      margin-top: 1rem;
+    }

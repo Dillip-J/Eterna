@@ -1,0 +1,144 @@
+/* ---------- form.css ---------- */
+/* For login, registration, and application forms */
+
+/* ---------- Global ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f7f8;
+  color: #222;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* ---------- Form Container ---------- */
+.form-container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-header .logo {
+  font-size: 36px;
+  font-weight: 600;
+  color: #106c89; /* Primary color */
+  margin-bottom: 10px;
+}
+
+.form-header h2 {
+  color: #082338; /* Deep Navy */
+  font-size: 1.8rem;
+}
+
+.form-header p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* ---------- Form Groups ---------- */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  background-color: #f9fafb;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #106c89;
+  box-shadow: 0 0 0 2px rgba(16, 108, 137, 0.1);
+}
+
+/* ---------- File Upload ---------- */
+.file-upload-group {
+  border: 2px dashed #106c89;
+  border-radius: 6px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f5f7f8;
+}
+
+.file-upload-group label {
+  font-weight: 600;
+  color: #106c89;
+  cursor: pointer;
+}
+
+.file-upload-group input[type="file"] {
+  display: none; /* Hide the default input */
+}
+
+.file-upload-group p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* ---------- Submit Button ---------- */
+.btn-submit {
+  width: 100%;
+  padding: 15px;
+  background-color: #106c89; /* Primary color */
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #0d5a73; /* Darker shade */
+}
+
+/* ---------- Footer Link ---------- */
+.form-footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+}
+
+.form-footer a {
+  color: #106c89;
+  font-weight: 500;
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+}

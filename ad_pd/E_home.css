@@ -1,0 +1,199 @@
+/* Universal Resets and Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: white; /* Default text color for the dark navbar */
+}
+
+/* --- Primary Navbar Styling (Dark Blue) --- */
+.navbar-primary {
+    background-color: #131921; /* Amazon dark blue/black */
+    display: flex;
+    align-items: center;
+    padding: 8px 4px;
+    height: 60px; /* Standard Amazon navbar height */
+}
+
+/* Utility classes for text sizing */
+.nav-small {
+    font-size: 10px;
+}
+.nav-bold {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* General Link/Item Styling */
+.nav-item, .nav-location, .nav-logo {
+    padding: 5px 9px;
+    text-decoration: none;
+    border: 1px solid transparent; /* Used for hover effect */
+    display: flex;
+    align-items: flex-end;
+    height: 50px; /* Ensure consistent click area */
+    cursor: pointer;
+}
+.nav-item:hover, .nav-location:hover, .nav-logo:hover {
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+/* 1. Logo */
+.nav-logo {
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.nav-logo img {
+    height: 35px; /* Adjust as needed */
+    width: auto;
+}
+
+/* 2. Location */
+.nav-location {
+    flex-direction: row;
+    align-items: center;
+    margin-right: 15px;
+}
+.nav-location i {
+    font-size: 18px;
+    margin-right: 4px;
+    margin-bottom: 3px;
+}
+.nav-location div {
+    display: flex;
+    flex-direction: column;
+    line-height: 1; /* Reduce space between lines */
+}
+
+/* 3. Search Bar */
+.nav-search {
+    display: flex;
+    flex-grow: 1; /* Allows the search bar to take up most of the space */
+    max-width: 800px;
+    height: 40px;
+    border-radius: 4px;
+    overflow: hidden; /* Helps contain border-radius */
+}
+.nav-search:focus-within {
+    box-shadow: 0 0 0 3px #f90; /* Amazon-style focus glow */
+}
+
+.search-category {
+    background-color: #e6e6e6; /* Light gray */
+    color: #0f1111; /* Dark text */
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    border-right: 1px solid #ddd;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    cursor: pointer;
+}
+.search-category i {
+    color: #0f1111;
+    margin-left: 5px;
+}
+
+.search-input {
+    flex-grow: 1;
+    border: none;
+    padding: 0 10px;
+    font-size: 15px;
+    color: #0f1111; /* Dark text for input */
+}
+.search-input:focus {
+    outline: none;
+}
+
+.search-button {
+    background-color: #febd69; /* Amazon Orange */
+    border: none;
+    width: 45px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.search-button i {
+    color: #131921; /* Dark icon color */
+    font-size: 18px;
+}
+
+/* 4, 5, 6. Right Side Items */
+.nav-right {
+    display: flex;
+    align-items: flex-end;
+}
+.nav-language img {
+    margin-right: 4px;
+    margin-bottom: 3px;
+}
+.nav-language i {
+    margin-bottom: 3px;
+}
+
+.nav-account, .nav-returns {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+/* 7. Cart */
+.nav-cart {
+    flex-direction: row;
+    align-items: flex-end;
+    position: relative;
+    padding-bottom: 10px;
+}
+.nav-cart i {
+    font-size: 30px;
+    margin-right: 5px;
+}
+.nav-cart span:last-child {
+    font-weight: 700;
+}
+.cart-count {
+    position: absolute;
+    top: 8px;
+    left: 14px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #febd69; /* Orange count number */
+}
+
+
+/* --- Secondary Navbar Styling (Darker Blue) --- */
+.navbar-secondary {
+    background-color: #232f3e; /* Darker blue */
+    padding: 0 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.navbar-secondary ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.navbar-secondary ul li {
+    font-size: 14px;
+    padding: 8px 9px;
+    margin-right: 4px;
+    border: 1px solid transparent; /* Used for hover effect */
+    cursor: pointer;
+}
+.navbar-secondary ul li:hover {
+    border: 1px solid white;
+    border-radius: 2px;
+}
+.nav-all {
+    font-weight: 700;
+}
+.nav-all i {
+    margin-right: 5px;
+}

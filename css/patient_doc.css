@@ -1,0 +1,254 @@
+/* ---------- Global ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f7f8;
+  color: #222;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------- Dashboard Layout ---------- */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ---------- Sidebar (Now Responsive) ---------- */
+.sidebar {
+  width: 260px;
+  min-width: 260px; /* Prevent shrinking */
+  background-color: #082338; /* Deep Navy from your branding */
+  color: #f5f7f8;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.sidebar-header {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 10px 0 20px 0;
+  text-align: center;
+  border-bottom: 1px solid #106c89; /* Primary color */
+}
+
+/* Sidebar Navigation Links */
+.sidebar-nav {
+  margin-top: 30px;
+  flex-grow: 1; /* Pushes profile/logout to bottom */
+}
+
+.sidebar-nav a {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between icon and text */
+  color: #d0e6e8;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar-nav a i {
+  font-size: 1.1rem;
+  width: 20px; /* Keeps text aligned */
+  text-align: center;
+}
+
+.sidebar-nav a:hover {
+  background-color: #106c89;
+  color: #ffffff;
+}
+
+.sidebar-nav a.active {
+  background-color: #106c89; /* Primary color */
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* New: Sidebar Profile Section */
+.sidebar-profile {
+  border-top: 1px solid #106c89;
+  padding-top: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sidebar-profile h4 {
+  color: #fff;
+  font-weight: 600;
+}
+
+.sidebar-profile p {
+  color: #d0e6e8;
+  font-size: 0.9rem;
+}
+
+.sidebar-logout {
+  padding-top: 15px;
+}
+
+.sidebar-logout a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #d0e6e8;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+.sidebar-logout a:hover {
+  background-color: #106c89;
+  color: #fff;
+}
+
+
+/* ---------- Main Content ---------- */
+.main-content {
+  flex-grow: 1;
+  background-color: #f5f7f8;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.main-header h1 {
+  color: #082338;
+  font-size: 2.5rem;
+}
+
+/* New: Mobile Nav Toggle (Hamburger) */
+.mobile-nav-toggle {
+  display: none; /* Hidden on desktop */
+  font-size: 24px;
+  color: #082338;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.user-profile {
+  font-weight: 500;
+  color: #222;
+}
+
+/* ----- Patient List Cards ----- */
+.patient-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.patient-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.patient-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.patient-card h3 {
+  color: #082338;
+  margin-bottom: 10px;
+}
+
+.patient-card p {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.patient-card .btn-view-records {
+  background-color: #106c89;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* ----- Patient Detail Header ----- */
+.patient-detail-header {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.patient-detail-header h1 {
+  color: #082338;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.patient-detail-header .info-grid {
+  display: flex;
+  gap: 30px;
+}
+
+.patient-detail-header .info-item {
+  font-size: 1rem;
+  color: #444;
+}
+
+.patient-detail-header .info-item strong {
+  color: #082338;
+  margin-right: 5px;
+}
+
+/* ----- Back Link ----- */
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #106c89;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* ----- Button Variants ----- */
+.btn-secondary {
+  background-color: #6b7280;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+.btn-secondary:hover {
+  background-color: #4b5563;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Review Application | V (Admin)</title>
+  <link rel="stylesheet" href="../css/ad_dash.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <div class="sidebar-header">V (Admin)</div>
+      <nav class="sidebar-nav">
+        <a href="#">Dashboard</a>
+        <a href="#" class="active">Provider Management</a>
+        <a href="#">User Management</a>
+        <a href="#">Bookings</a>
+        <a href="#">Reviews & Complaints</a>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="#">Settings</a>
+        <a href="#">Log Out</a>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="main-header">
+        <h1>Review Application</h1>
+        <div class="user-profile">
+          Logged in as: [Admin Name]
+        </div>
+      </header>
+
+      <div class="review-container">
+
+        <section class="review-details">
+          <h2>Application Details</h2>
+          
+          <div class="detail-group">
+            <label>Provider Name</label>
+            <p>Dr. Emily White</p>
+          </div>
+
+          <div class="detail-group">
+            <label>Provider Type</label>
+            <p>Individual (Doctor)</p>
+          </div>
+
+          <div class="detail-group">
+            <label>Email Address</label>
+            <p>emily.white@email.com</p>
+          </div>
+
+          <div class="detail-group">
+            <label>Phone Number</label>
+            <p>+1 234 567 890</p>
+          </div>
+
+          <div class="detail-group">
+            <label>Services Offered</label>
+            <p>General Consultation, In-home Nursing, Blood Test Collection</p>
+          </div>
+
+        </section>
+
+        <section class="review-actions">
+          <h2>Verification</h2>
+
+          <label>Submitted Documents</label>
+          <ul class="document-list">
+            <li>Medical_License.pdf <a href="#">View</a></li>
+            <li>ID_Proof_Front.jpg <a href="#">View</a></li>
+            <li>ID_Proof_Back.jpg <a href="#">View</a></li>
+          </ul>
+
+          <label>Internal Notes (Optional)</label>
+          <textarea rows="3" placeholder="e.g., Verified license with state board..."></textarea>
+          
+          <div class="action-buttons">
+            <button class="btn-approve">Approve Provider</button>
+            <button class="btn-decline">Decline Application</button>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+</body>
+</html>

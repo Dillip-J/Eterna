@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>V - Admin Dashboard</title>
+  <link rel="stylesheet" href="../css/dashboard.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <div class="logo">V (Admin)</div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li class="active"><a href="#">Dashboard</a></li>
+          <li><a href="#">Provider Verifications</a></li>
+          <li><a href="#">Manage Providers</a></li>
+          <li><a href="#">Manage Patients</a></li>
+          <li><a href="#">View Complaints</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="header">
+        <h1>Admin Dashboard</h1>
+        <div class="admin-profile">
+          <span>Welcome, Admin User</span>
+        </div>
+      </header>
+
+      <section class="stat-cards">
+        <div class="stat-card">
+          <h4>Pending Verifications</h4>
+          <p>12</p>
+          <a href="#">View All</a>
+        </div>
+        <div class="stat-card">
+          <h4>Open Complaints</h4>
+          <p>5</p>
+          <a href="#">Investigate</a>
+        </div>
+        <div class="stat-card">
+          <h4>Total Active Providers</h4>
+          <p>45</p>
+        </div>
+        <div class="stat-card">
+          <h4>Bookings (24h)</h4>
+          <p>82</p>
+        </div>
+      </section>
+
+      <section class="content-table">
+        <h2>Recent Complaints</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Booking ID</th>
+              <th>User</th>
+              <th>Provider</th>
+              <th>Complaint</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>BK-456</td>
+              <td>user@example.com</td>
+              <td>provider@example.com</td>
+              <td>Provider was late...</td>
+              <td><span class="status-pending">Pending</span></td>
+              <td><button class="btn-primary">Investigate</button></td>
+            </tr>
+            <tr>
+              <td>BK-452</td>
+              <td>user2@example.com</td>
+              <td>provider2@example.com</td>
+              <td>Incorrect service...</td>
+              <td><span class="status-resolved">Resolved</span></td>
+              <td><button class="btn-secondary">View</button></td>
+            </tr>
+            </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

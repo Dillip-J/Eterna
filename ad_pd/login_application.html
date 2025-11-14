@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Provider Registration | V (Vision)</title>
+  <link rel="stylesheet" href="../css/login_application.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="form-container">
+    <div class="form-header">
+      <div class="logo">V</div>
+      <h2>Become a V (Vision) Provider</h2>
+      <p>Join our network to provide care at your convenience.</p>
+    </div>
+
+    <form action="/register-provider" method="POST" enctype="multipart/form-data">
+      
+      <div class="form-group">
+        <label for="provider-type">Are you registering as an individual or a hospital?</label>
+        <select id="provider-type" name="provider_type" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="individual">Individual (Doctor, Nurse, Physio)</option>
+          <option value="hospital">Hospital / Clinic / Lab</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Full Name or Hospital Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="password">Create Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <div class="form-group">
+        <label for="services">What services will you offer?</label>
+        <textarea id="services" name="services_description" rows="3" placeholder="e.g., General Consultation, In-home Nursing, Blood Test Collection, Physiotherapy..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Background & Qualification</label>
+        <div class="file-upload-group">
+          <label for="verification-file">
+            Click to upload documents
+          </label>
+          <input type="file" id="verification-file" name="verification_docs" multiple>
+          <p>Please upload medical licenses, identity proof, and other credentials.</p>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-submit">Apply for Verification</button>
+      
+      <div class="form-footer">
+        <p>Already have an account? <a href="provider-login.html">Log In</a></p>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

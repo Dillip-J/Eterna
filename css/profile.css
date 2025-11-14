@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d2d2d;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background: #f2f2f2;
+  border-radius: 6px;
+  padding: 0.3rem 0.5rem;
+}
+
+.search-container input {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 0.3rem 0.5rem;
+}
+
+.search-container button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Secondary Nav */
+.sub-nav {
+  display: flex;
+  justify-content: space-evenly;
+  background: #006d6d;
+  padding: 0.5rem 0;
+}
+
+.sub-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* Doctor Section */
+.doctor-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.doctor-img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.doctor-info {
+  flex: 1;
+}
+
+.buttons {
+  margin-top: 1.5rem;
+}
+
+.btn-primary {
+  background-color: #1e73e6;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 1rem;
+}
+
+.btn-secondary {
+  background-color: #e5e5e5;
+  color: #333;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Mission Section */
+.mission {
+  background: #e5eaea;
+  margin: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+}
+
+.mission h3 {
+  color: #2a4f55;
+  margin-bottom: 1rem;
+}
+
+.mission p {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+  background: #103636;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem 1rem;
+  bottom: 0 auto;
+}
+
+.footer-col h4 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.footer-col a {
+  display: block;
+  color: #cfdcdc;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.footer-col a:hover {
+  color: white;
+}
+
+.call-icon {
+  color: red;
+}
+
+.copyright {
+  text-align: center;
+  background: #0d2d2d;
+  color: #ccc;
+  padding: 0.8rem;
+  font-size: 0.85rem;
+}

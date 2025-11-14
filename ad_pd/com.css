@@ -1,0 +1,120 @@
+/* ---------- Add this to your dashboard.css ---------- */
+
+/* ---------- Status Tags ---------- */
+.status-tag {
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.status-open {
+  background-color: #d97706; /* Amber */
+}
+
+.status-resolved {
+  background-color: #059669; /* Green */
+}
+
+.status-under-review {
+  background-color: #2563eb; /* Blue */
+}
+
+/* ---------- Rating Stars ---------- */
+.rating-stars {
+  color: #f59e0b; /* Gold */
+}
+
+/* ---------- Modal (for viewing complaints) ---------- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  /* Add 'display: none;' by default */
+  /* You would use JavaScript to toggle this */
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.modal-header h2 {
+  color: #082338;
+}
+
+.modal-close {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.modal-body .detail-group {
+  margin-bottom: 20px;
+}
+
+.modal-body .detail-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.modal-body .detail-group p {
+  font-size: 1rem;
+  color: #222;
+  background-color: #f5f7f8;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.modal-footer {
+  text-align: right;
+  margin-top: 30px;
+}
+
+/* Example button for modal actions */
+.btn-primary {
+  background-color: #106c89;
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.btn-secondary {
+  background-color: #6b7280;
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 10px;
+}

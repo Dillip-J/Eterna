@@ -1,0 +1,216 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #222;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+/* ---------- Navbar ---------- */
+.navbar {
+  background-color: #0b2c2f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background: #f2f2f2;
+  border-radius: 6px;
+  padding: 0.3rem 0.5rem;
+}
+
+.search-container input {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 0.3rem 0.5rem;
+}
+
+.search-container button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-right a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-right a:hover {
+  color: #00ffff;
+}
+
+/* ---------- Subnav ---------- */
+.subnav {
+  background-color: #157278;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.subnav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.subnav a:hover {
+  color: #00ffff;
+}
+/* Menu */
+.menu {
+  background-color: #1d6666;
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  padding: 10px 0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px auto;
+  width: 90%;
+  gap: 20px;
+}
+
+.hero-image {
+  width: 60%;
+  height: 385px;
+  border-radius: 10px;
+  overflow: hidden;              /* Ensures the image follows rounded corners */
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;             /* Fills container without distortion */
+  object-position: center;       /* Centers the visible part */
+  border-radius: 10px;
+  display: block;
+}
+
+.hero-text {
+  background-color: #184e4e;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 40%;
+  font-size: 18px;
+}
+
+/* Cards Section */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 25px;
+  margin: 40px auto;
+  width: 90%;
+}
+
+.card {
+  width: 12.5rem;
+  text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 10px 0;
+  font-weight: 500;
+}
+
+.signup {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.signup button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #153c3c;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+  flex-wrap: wrap;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.footer-section p {
+  font-size: 14px;
+}
+
+.copyright {
+  background-color: #102828;
+  color: #ccc;
+  text-align: center;
+  padding: 10px;
+  font-size: 13px;
+} 

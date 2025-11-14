@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Provider Dashboard | V (Vision)</title>
+  <link rel="stylesheet" href="../css/dashboard.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <div class="sidebar-header"><a href=""></a>Vision</div>
+      <nav class="sidebar-nav">
+        <a href="#" class="active">Dashboard</a>
+        <a href="#">My Schedule</a>
+        <a href="#">Patient Records</a>
+        <a href="#">My Services</a>
+        <a href="#">Profile</a>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="#">Settings</a>
+        <a href="#">Log Out</a>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="main-header">
+        <h1>Welcome, Dr. [Provider Name]</h1>
+        <div class="user-profile">
+          Status: <span class="status-approved">Verified</span>
+        </div>
+      </header>
+
+      <section class="card-container">
+        <div class="card">
+          <h3>Upcoming Appointments</h3>
+          <div class="stat">5</div>
+          <p>Bookings for today</p>
+        </div>
+        <div class="card">
+          <h3>Pending Reports</h3>
+          <div class="stat">2</div>
+          <p>Reports to be uploaded</p>
+        </div>
+        <div class="card">
+          <h3>Total Earnings (Month)</h3>
+          <div class="stat">$1,280</div>
+          <p>Earnings for November</p>
+        </div>
+      </section>
+
+      <section class="data-table-container">
+        <h2>Today's Schedule</h2>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Patient Name</th>
+              <th>Service</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10:00 AM</td>
+              <td>John Doe</td>
+              <td>Physiotherapy</td>
+              <td class="status-pending">Pending</td>
+              <td><button class="btn">View Details</button></td>
+            </tr>
+            <tr>
+              <td>11:30 AM</td>
+              <td>Jane Smith</td>
+              <td>Nursing Care</td>
+              <td class="status-pending">Pending</td>
+              <td><button class="btn">View Details</button></td>
+            </tr>
+            <tr>
+              <td>02:00 PM</td>
+              <td>Michael Lee</td>
+              <td>Doctor Consultation</td>
+              <td class="status-pending">Pending</td>
+              <td><button class="btn">View Details</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

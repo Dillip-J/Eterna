@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Consultation | V (Vision)</title>
+  <link rel="stylesheet" href="../css/dieases.css" /> 
+  <link rel="stylesheet" href="../css/booking.css" /> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Vision</div>
+    <div class="search-container">
+      <input type="text" placeholder="Search" />
+      <button>🔍</button>
+    </div>
+
+    <nav class="nav-right">
+      <a href="#">Emergency</a>
+      <a href="#">Login</a>
+    </nav>
+  </header>
+
+  <nav class="subnav">
+    <a href="dieases.html">Doctors</a>
+    <a href="#">Medicine</a>
+    <a href="#">Lab Tests</a>
+    <a href="#">Ayurveda</a>
+    <a href="#">Cancer Care</a>
+  </nav>
+
+  <div class="booking-container">
+    
+    <div class="slot-selection">
+      <h1 class="service-type">Book Consultation with Dr. Khanna</h1>
+      
+      <h3>1. Select Date</h3>
+      <div class="date-selector">
+        <div class="date-option">
+          <input type="radio" id="date1" name="date" value="2025-11-15" checked>
+          <label for="date1" class="date-label">
+            <strong>Sat</strong><br>Nov 15
+          </label>
+        </div>
+        <div class="date-option">
+          <input type="radio" id="date2" name="date" value="2025-11-16">
+          <label for="date2" class="date-label">
+            <strong>Sun</strong><br>Nov 16
+          </label>
+        </div>
+        <div class="date-option">
+          <input type="radio" id="date3" name="date" value="2025-11-17">
+          <label for="date3" class="date-label">
+            <strong>Mon</strong><br>Nov 17
+          </label>
+        </div>
+        <div class="date-option">
+          <input type="radio" id="date4" name="date" value="2025-11-18">
+          <label for="date4" class="date-label">
+            <strong>Tue</strong><br>Nov 18
+          </label>
+        </div>
+        <div class="date-option">
+          <input type="radio" id="date5" name="date" value="2025-11-19">
+          <label for="date5" class="date-label">
+            <strong>Wed</strong><br>Nov 19
+          </label>
+        </div>
+      </div>
+
+      <h3>2. Select Time Slot</h3>
+      <p style="margin-bottom: 20px; color: #555;">Consultation duration: 20 minutes</p>
+      
+      <div class="time-slots-grid">
+        <div class="slot-option">
+          <input type="radio" id="slotA" name="time" value="09:00">
+          <label for="slotA" class="slot-label">09:00 AM</label>
+        </div>
+        <div class="slot-option">
+          <input type="radio" id="slotB" name="time" value="09:30" checked>
+          <label for="slotB" class="slot-label">09:30 AM</label>
+        </div>
+        <div class="slot-option">
+          <input type="radio" id="slotC" name="time" value="10:00">
+          <label for="slotC" class="slot-label">10:00 AM</label>
+        </div>
+        <div class="slot-option">
+          <input type="radio" id="slotD" name="time" value="10:30">
+          <label for="slotD" class="slot-label unavailable">10:30 AM</label>
+        </div>
+
+        <div class="slot-option">
+          <input type="radio" id="slotE" name="time" value="14:00">
+          <label for="slotE" class="slot-label">02:00 PM</label>
+        </div>
+        <div class="slot-option">
+          <input type="radio" id="slotF" name="time" value="14:30">
+          <label for="slotF" class="slot-label">02:30 PM</label>
+        </div>
+        <div class="slot-option">
+          <input type="radio" id="slotG" name="time" value="15:00">
+          <label for="slotG" class="slot-label">03:00 PM</label>
+        </div>
+        <div class="slot-option">
+          <input type="radio" id="slotH" name="time" value="16:00">
+          <label for="slotH" class="slot-label">04:00 PM</label>
+        </div>
+      </div>
+    </div>
+    
+    <div class="booking-summary">
+      <h3>Booking Summary</h3>
+      
+      <div class="summary-detail">
+        <p>Doctor: <strong>Dr. Rohan Khanna</strong></p>
+      </div>
+      <div class="summary-detail">
+        <p>Specialization: <strong>Men's Health & Urology</strong></p>
+      </div>
+      <div class="summary-detail">
+        <p>Service Type: <strong> Consultation</strong></p> 
+      </div>
+      <div class="summary-detail">
+        <p>Selected Date: <strong>Saturday, Nov 15, 2025</strong></p>
+      </div>
+      <div class="summary-detail">
+        <p>Selected Time: <strong>09:30 AM</strong></p>
+      </div>
+
+      <div class="summary-price">
+        <span>Total Fee:</span>
+        <span>₹1,500</span>
+      </div>
+
+      <a href="pay.html" class="btn-next-step">
+        Proceed to Review & Pay
+      </a>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>About Us</h4>
+        <a href="#">Vision & Mission</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="footer-section">
+        <h4>Consultations</h4>
+        <a href="#">Online Consultation</a>
+        <a href="#">Offline Consultation</a>
+        <a href="#">Emergency 📞</a>
+        <a href="#">Support</a>
+      </div>
+      <div class="footer-section">
+        <h4>For Patients</h4>
+        <a href="#">Find a Doctor</a>
+        <a href="#">Health Articles</a>
+        <a href="#">FAQs</a>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#">FB</a>
+          <a href="#">IG</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">X</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 Eterna. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
