@@ -22,13 +22,12 @@ body a {
 /*----site wrapper -------*/
 .site-wrapper {
   display: grid;
-  /* Define the layout: header and footer are 'auto' height, main content takes remaining space (1fr) */
   grid-template-rows: auto auto auto 1fr; 
   min-height: 100%;
 }
 /* ---------- Navbar ---------- */
 .navbar {
-  background-color: #0b2c2f;
+  background-color:#0b2c2f;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -103,10 +102,16 @@ body a {
 /* ---------- Categories ---------- */
 .categories {
   display: grid;
-  grid-template-columns: repeat(3 , minmax(190px, 1fr));
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
   gap: 25px;
   padding: 50px 10%;
   background-color: #ffffff;
+}
+
+.categories img {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
 }
 
 .category-card {
@@ -137,7 +142,7 @@ body a {
 
 /* ---------- Footer ---------- */
 .footer {
-  background-color: #0f2f31;
+  background-color:#091f2c;
   color: white;
   padding: 40px 8% 20px;
 }

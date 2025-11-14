@@ -15,7 +15,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #0d2d2d;
+  background: #0b2c2f;
   padding: 1rem 2rem;
   color: white;
 }
@@ -78,7 +78,8 @@ body {
 }
 
 .doctor-img {
-  width: 250px;
+  width: 450px;
+  height: 20rem;
   border-radius: 10px;
 }
 
@@ -131,7 +132,7 @@ body {
 
 /* ---------- Footer ---------- */
 .footer {
-  background-color: #0f2f31;
+   background-color: #091f2c;#106c89; #0f2f31; */
   color: white;
   padding: 40px 8% 20px;
 }

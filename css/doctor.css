@@ -19,7 +19,7 @@ body a {
 
 /* ---------- Navbar ---------- */
 .navbar {
-  background-color: #0b2c2f;
+  background-color:#0b2c2f;
   display: flex;
   justify-content: space-between;
   align-items: center;
