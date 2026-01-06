@@ -1,7 +1,6 @@
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  padding: 0;  box-sizing: border-box;w
   font-family: 'Poppins', sans-serif;
 }
 
@@ -175,6 +174,4 @@ body {
   border-top: 1px solid rgba(255,255,255,0.1);
   padding-top: 10px;
   font-size: 14px;
-  opacity: 0.8;
-}
-
+  opacity: 0.8;w}

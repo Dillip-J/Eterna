@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Dashboard | Vision</title>
+
+  <!-- Dashboard CSS -->
+  <link rel="stylesheet" href="../css/dashboard.css" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+  <!-- ========== Sidebar ========== -->
+  <aside class="sidebar">
+    <div class="sidebar-header">Vision</div>
+
+    <nav class="sidebar-nav">
+      <a href="#" class="active">Dashboard</a>
+      <a href="bookings.html">My Bookings</a>
+      <a href="#">Medical Records</a>
+      <a href="#">Payments</a>
+      <a href="#">Profile</a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <a href="#">Logout</a>
+    </div>
+  </aside>
+
+  <!-- ========== Main Content ========== -->
+  <main class="main-content">
+
+    <!-- Header -->
+    <div class="main-header">
+      <h1>My Dashboard</h1>
+      <div class="user-profile">Hi, Dillip 👋</div>
+    </div>
+
+    <!-- ========== Dashboard Cards ========== -->
+    <div class="card-container">
+      <div class="card">
+        <h3>Total Bookings</h3>
+        <div class="stat">12</div>
+        <p>All consultations booked</p>
+      </div>
+
+      <div class="card">
+        <h3>Upcoming</h3>
+        <div class="stat">2</div>
+        <p>Scheduled appointments</p>
+      </div>
+
+      <div class="card">
+        <h3>Completed</h3>
+        <div class="stat">9</div>
+        <p>Successfully completed</p>
+      </div>
+
+      <div class="card">
+        <h3>Cancelled</h3>
+        <div class="stat">1</div>
+        <p>Cancelled appointments</p>
+      </div>
+    </div>
+
+    <!-- ========== Booking Table ========== -->
+    <div class="data-table-container">
+      <h2>My Recent Bookings</h2>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Doctor</th>
+            <th>Service</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Dr. Ananya Rao</td>
+            <td>Online Consultation</td>
+            <td>15 Nov 2025</td>
+            <td>09:30 AM</td>
+            <td class="status-approved">Upcoming</td>
+            <td>
+              <button class="btn">View</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Dr. Rahul Mehta</td>
+            <td>Clinic Visit</td>
+            <td>02 Nov 2025</td>
+            <td>05:00 PM</td>
+            <td class="status-approved">Completed</td>
+            <td>
+              <button class="btn">Details</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Dr. Sneha Kapoor</td>
+            <td>Online Consultation</td>
+            <td>20 Oct 2025</td>
+            <td>11:00 AM</td>
+            <td class="status-declined">Cancelled</td>
+            <td>
+              <button class="btn">Rebook</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+</div>
+
+</body>
+</html>

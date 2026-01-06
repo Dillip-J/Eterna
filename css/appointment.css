@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* NAVBAR
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #082338;
+  color: #ffffff;
+}
+
+header h2 {
+  font-size: 24px;
+}
+
+header input {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+header button {
+  padding: 8px 12px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+header nav a {
+  color: #ffffff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* SUB NAV *//*
+nav {
+  background-color: #ffffff;
+  padding: 12px 40px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+} */ 
+
+/* MAIN CONTENT */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+main h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+main p {
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+/* APPOINTMENT CARD */
+article {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+article section {
+  padding: 25px;
+}
+
+article h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+article section p {
+  margin-bottom: 15px;
+  color: #374151;
+}
+
+article hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 20px 0;
+}
+
+/* STATUS COLORS */
+article strong + span {
+  font-weight: 600;
+}
+
+/* ACTION BUTTONS */
+article nav {
+  margin-top: 25px;
+}
+
+article nav a {
+  display: inline-block;
+  padding: 12px 18px;
+  margin-right: 12px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #082338;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+article nav a:hover {
+  background-color: #0a3a5a;
+}
+
+/* CANCEL BUTTON */
+article nav a:nth-child(2) {
+  background-color: #dc2626;
+}
+
+article nav a:nth-child(2):hover {
+  background-color: #b91c1c;
+}
+
+/* JOIN BUTTON */
+article nav a:first-child {
+  background-color: #059669;
+}
+
+article nav a:first-child:hover {
+  background-color: #047857;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  main {
+    margin: 20px auto;
+  }
+
+  article nav a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Responsive adjustments
+@media (max-width: 768px) {
+  .category-section-wrapper {
+    padding: 30px 5%;
+  }
+
+  .category-card .card-content {
+    padding: 20px;
+  }
+
+  .category-card .card-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .category-card.detailed-card img {
+    height: 200px;
+  }
+} */
