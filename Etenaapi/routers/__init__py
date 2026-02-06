@@ -1,0 +1,8 @@
+# routers/__init__.py
+from .auth import router as auth
+from .booking import router as booking
+from .home import router as home
+from .records import router as records
+from .support import router as support
+from .services import router as services
+from .feedback import router as feedback

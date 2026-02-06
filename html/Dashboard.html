@@ -1,128 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>User Dashboard | Vision</title>
-
-  <!-- Dashboard CSS -->
-  <link rel="stylesheet" href="../css/dashboard.css" />
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Dashboard | Vision</title>
+  <style>
+    body { font-family: sans-serif; background: #f5f7f8; margin: 0; }
+    body a { text-decoration: none; color: inherit; }
+    .nav { background: #082338; padding: 15px 8%; color: white; display: flex; justify-content: space-between; }
+    .content { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+    
+    .appointment-card { background: white; border-radius: 12px; padding: 20px; border-left: 6px solid #106c89; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 20px; }
+    .status-tag { background: #e0f2f1; color: #00796b; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; }
+    .track-link { color: #106c89; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+  </style>
 </head>
 <body>
 
-<div class="dashboard-container">
+  <div class="nav">
+    <div style="font-weight: bold; text-decoration: none;"><a href="E_home_page.html">Vision Dashboard</a></div>
+    <div>Jane Doe ▾</div>
+  </div>
 
-  <!-- ========== Sidebar ========== -->
-  <aside class="sidebar">
-    <div class="sidebar-header">Vision</div>
+  <div class="content">
+    <h2 style="color: #082338;">Upcoming Consultations</h2>
 
-    <nav class="sidebar-nav">
-      <a href="#" class="active">Dashboard</a>
-      <a href="bookings.html">My Bookings</a>
-      <a href="#">Medical Records</a>
-      <a href="#">Payments</a>
-      <a href="#">Profile</a>
-    </nav>
-
-    <div class="sidebar-footer">
-      <a href="#">Logout</a>
-    </div>
-  </aside>
-
-  <!-- ========== Main Content ========== -->
-  <main class="main-content">
-
-    <!-- Header -->
-    <div class="main-header">
-      <h1>My Dashboard</h1>
-      <div class="user-profile">Hi, Dillip 👋</div>
-    </div>
-
-    <!-- ========== Dashboard Cards ========== -->
-    <div class="card-container">
-      <div class="card">
-        <h3>Total Bookings</h3>
-        <div class="stat">12</div>
-        <p>All consultations booked</p>
-      </div>
-
-      <div class="card">
-        <h3>Upcoming</h3>
-        <div class="stat">2</div>
-        <p>Scheduled appointments</p>
-      </div>
-
-      <div class="card">
-        <h3>Completed</h3>
-        <div class="stat">9</div>
-        <p>Successfully completed</p>
-      </div>
-
-      <div class="card">
-        <h3>Cancelled</h3>
-        <div class="stat">1</div>
-        <p>Cancelled appointments</p>
+    <div class="appointment-card">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+        <div>
+          <span class="status-tag">DOCTOR DISPATCHED</span>
+          <h3 style="margin: 10px 0 5px;">Dr. Rohan Khanna (Home Visit)</h3>
+          <p style="color: #666; font-size: 0.9rem; margin: 0;">Arrival expected in 12 mins</p>
+          <p style="color: #999; font-size: 0.8rem; margin-top: 5px;">📍 Sector 18, Apartment 4B</p>
+        </div>
+        <a href="#" class="track-link">Track on Map ➔</a>
       </div>
     </div>
 
-    <!-- ========== Booking Table ========== -->
-    <div class="data-table-container">
-      <h2>My Recent Bookings</h2>
-
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Doctor</th>
-            <th>Service</th>
-            <th>Date</th>
-            <th>Time</th>
-            <th>Status</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>Dr. Ananya Rao</td>
-            <td>Online Consultation</td>
-            <td>15 Nov 2025</td>
-            <td>09:30 AM</td>
-            <td class="status-approved">Upcoming</td>
-            <td>
-              <button class="btn">View</button>
-            </td>
-          </tr>
-
-          <tr>
-            <td>Dr. Rahul Mehta</td>
-            <td>Clinic Visit</td>
-            <td>02 Nov 2025</td>
-            <td>05:00 PM</td>
-            <td class="status-approved">Completed</td>
-            <td>
-              <button class="btn">Details</button>
-            </td>
-          </tr>
-
-          <tr>
-            <td>Dr. Sneha Kapoor</td>
-            <td>Online Consultation</td>
-            <td>20 Oct 2025</td>
-            <td>11:00 AM</td>
-            <td class="status-declined">Cancelled</td>
-            <td>
-              <button class="btn">Rebook</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="appointment-card" style="border-left-color: #673ab7;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+        <div>
+          <span class="status-tag" style="background:#f3e5f5; color:#7b1fa2;">SCHEDULED</span>
+          <h3 style="margin: 10px 0 5px;">Dr. Sarah Ahmed (Video Call)</h3>
+          <p style="color: #666; font-size: 0.9rem; margin: 0;">Nov 16, 2025 at 10:00 AM</p>
+        </div>
+        <button style="background: #673ab7; color: white; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer;">Join Waiting Room</button>
+      </div>
     </div>
-
-  </main>
-</div>
+  </div>
 
 </body>
 </html>
